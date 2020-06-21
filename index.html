@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="com-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        hello, {{name}}
+    </div>
+
+    <script type="module">
+        import Due from './core/index.js';
+
+        window.vm = new Due({
+            el : '#app',
+            data : {
+                name : '张三',
+            }
+        })
+    </script>
+</body>
+</html>
